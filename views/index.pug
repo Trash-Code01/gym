@@ -1,0 +1,275 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Fitneshub is a gym and fitness center located in [City, Country]. We offer a wide range of equipment, classes, and personal training options for all fitness levels. Join us today and start your fitness journey!')
+    meta(name='keywords', content='gym, fitness center, personal training, [City], [Country]')
+    meta(name='author', content='laraib')
+    title FitnessHub | Gym &amp; Fitness Center in [City, Country]
+    link(rel='canonical', href='https://www.fitneshub.com/')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==', crossorigin='anonymous', referrerpolicy='no-referrer')
+    link(rel='stylesheet', href='/static/css/style.css')
+    link(rel='stylesheet', href='/static/css/bundle.css')
+  body
+    header.header-section
+      nav.navbar.h-nav
+        .logo
+          a(href='/index')
+            img(src='/static/img/slider.img/logo.png', alt='')
+        ul.navlist.v-class
+          li
+            a(id="index-link", href="/index") Home
+          li
+            a(href='about')  About us
+          li
+            a(href='class')  Classes
+          li
+            a(href='services')  Services
+          li
+            a(href='our-team')  our team
+          li
+            a(href='member') Become member 
+          li
+            a(href='sign-up') login 
+        .burger
+          .line
+          .line
+          .line
+    // slider section started
+    .first-section
+      section.main.swiper.mySwiper
+        .wrapper.swiper-wrapper
+          .slide.swiper-slide
+            img.image(src='/static/img/slider.img/slider-first.jpg', alt='')
+            .image-data
+              span.hed-text  SHAPE YOUR BODY
+              .container
+                span.text.first-text BE STRONG
+                span.text.sec-text TRAIN HARD
+              a.button(href='#') About Us
+          .slide.swiper-slide
+            img.image(src='/static/img/slider.img/slider-second.jpg', alt='')
+            .image-data
+              span.hed-text  SHAPE YOUR BODY
+              .container
+                span.text.first-text BE STRONG
+                span.text.sec-text2nd Don&apos;t give Up
+              a.button(href='#') About Us
+          .slide.swiper-slide
+            img.image(src='/static/img/slider.img/slider-third.jpg', alt='')
+            .image-data
+              span.hed-text  SHAPE YOUR BODY
+              .container
+                span.text.first-text BE STRONG
+                span.text.sec-text3rd You Can Do This
+              a.button(href='#') About Us
+        .swiper-button-next.nav-btn
+        .swiper-button-prev.nav-btn
+        .swiper-pagination
+    // slider section end
+    section.second-sec
+      h2 WHY CHOSE US??
+      h1.text-center PUSH YOUR LIMITS FORWARD
+      .cart
+        .card-1st
+          .card-img
+            img(src='/static/img/png.img/stationary-bike.png', alt='')
+          span  Morder equipment
+          .para-txt
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+            | iure nostrum ipsam earum nesciunt exercitationem enim quas eaque?
+            | Itaque, totam!
+        .card-2nd
+          .card-img
+            img(src='/static/img/png.img/diet.png', alt='')
+          span  Healthy nutrition plan
+          .para-txt
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+            | iure nostrum ipsam earum nesciunt exercitationem enim quas eaque?
+            | Itaque, totam!
+        .card-3rd
+          .card-img
+            img(src='/static/img/png.img/dumbbell.png', alt='')
+          span  Proffesponal training plan
+          .para-txt
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+            | iure nostrum ipsam earum nesciunt exercitationem enim quas eaque?
+            | Itaque, totam!
+        .card-4th
+          .card-img
+            img(src='/static/img/png.img/heart-attack.png', alt='')
+          span  Unique to your needs
+          .para-txt
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+            | iure nostrum ipsam earum nesciunt exercitationem enim quas eaque?
+            | Itaque, totam!
+    section.class-section
+      span.gallery-hed  Our Classes
+      h1.class-sec-hed what we can offer
+      .gallery-sm
+        .card-gallery
+          .cardimg-sm
+            img(src='/static/img/gallery.img/class-1.jpg', alt='')
+          .gallery-txt STRENGTH
+          span WEIGHTLIFTING 
+        .card-gallery
+          .cardimg-sm
+            img(src='/static/img/gallery.img/class-2.jpg', alt='')
+          .gallery-txt STRENGTH
+          span INDOOR CYCLING 
+        .card-gallery
+          .cardimg-sm
+            img(src='/static/img/gallery.img/class-3.jpg', alt='')
+          .gallery-txt STRENGTH
+          span WEIGHTLIFTING 
+      .big-gallery
+        .big-card
+          .bigcard-img
+            img(src='/static/img/gallery.img/details-1.jpg', alt='')
+          .gallery-txt CARDIO
+          span WEIGHTLIFTING 
+        .big-card
+          .bigcard-img
+            img(src='/static/img/gallery.img/latest-1.jpg', alt='')
+          .gallery-txt TRAINING
+          span BOXING 
+    section.banner
+      .banner-img
+        span.banner-text REGISTRATION NOW TO GET MORE DEALS
+        span.bannersec-text WHERE HEALTH, BEAUTY AND FITNESS MEET.
+        .member-btn
+          button.become-member Become a member
+    section.price-section
+      h1.price-sec-hed OUR PLAN
+      span.price-sec-span CHOOSE YOUR PRICING PLAN
+      .plan
+        .plan-main-card
+          #fixed.plan-inner-card
+            h1.plan-hed Class drop-in
+            .rate-of-plan $40
+            .class-plan Single class
+            ol
+              li.plan-li Free riding
+              li.plan-li Unlimited equipments
+              li.plan-li Personal trainer
+              li.plan-li Weight losing classes
+              li.plan-li Month to mouth
+              li.plan-li No time restriction
+            .enroll-btn
+              button.enroll ENROLL NOW
+        .plan-main-card
+          .plan-inner-card
+            h1.plan-hed 12 Month unlimited
+            .rate-of-plan $90
+            .class-plan Single class
+            ol
+              li.plan-li Free riding
+              li.plan-li Unlimited equipments
+              li.plan-li Personal trainer
+              li.plan-li Weight losing classes
+              li.plan-li Month to mouth
+              li.plan-li No time restriction
+            .enroll-btn
+              button.enroll ENROLL NOW
+        .plan-main-card
+          .plan-inner-card
+            h1.plan-hed 6 Month unlimited
+            .rate-of-plan $59
+            .class-plan Single class
+            ol
+              li.plan-li Free riding
+              li.plan-li Unlimited equipments
+              li.plan-li Personal trainer
+              li.plan-li Weight losing classes
+              li.plan-li Month to mouth
+              li.plan-li No time restriction
+            .enroll-btn
+              button.enroll ENROLL NOW
+    section.photo-gallery
+      .photo-gallery
+        .gallery-first-photo
+          img(src='/static/img/gallery.img/banner-bg.jpg', alt='')
+        .gallery-second-photo
+          img(src='/static/img/gallery.img/gallery-2.jpg', alt='')
+        .gallery-third-photo
+          img(src='/static/img/gallery.img/gallery-3.jpg', alt='')
+    .gallary-container
+      .photo-conatiner
+        .gallery-first-photo-conatiner
+          img(src='/static/img/gallery.img/gallery-4.jpg', alt='')
+        .gallery-second-photo-conatiner
+          img(src='/static/img/gallery.img/gallery-5.jpg', alt='')
+        .gallery-third-photo-conatiner
+          img(src='/static/img/gallery.img/gallery-6.jpg', alt='')
+    footer.footer-section
+      .connnect-with-us
+        .location-img
+          img(src='/static/img/png.img/icons8-region-100.png', alt='')
+        span.location-span  333 Middle Winchendon Rd, Rindge
+        .android-img
+          img(src='/static/img/png.img/icons8-smartphone-96.png', alt='')
+        span.android-span  125-711-811|125-711-811
+        .mail-img
+          img(src='/static/img/png.img/icons8-gmail-logo-96.png', alt='')
+        span.mail-span support gym@gmail.com
+      .footer-container
+        .logo-text
+          .footer-logo
+            img(src='/static/img/slider.img/logo.png', alt='')
+          p.logo-para
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+            | ut aliquid consectetur quae, ipsum, cumque doloremque mollitia
+            | veritatis vero ducimus, natus placeat officiis rem. Reprehenderit
+            | eveniet laborum adipisci optio nobis.
+          span.favicon
+            a(href='')
+              i.fa-brands.fa-facebook
+          span.favicon
+            a(href='')
+              i.fa-brands.fa-instagram
+          span.favicon
+            a(href='')
+              i.fa-brands.fa-twitter
+          span.favicon
+            a(href='')
+              i.fa-brands.fa-youtube
+          span.favicon
+            a(href='')
+              i.fa.fa-envelope(aria-hidden='true')
+        .useful-link
+          h1.usful-hed Useful links
+          ul
+            li
+              a(id="about-link", href="/about") About
+            li
+              a(href='') Blog
+            li
+              a(id="class-link", href="/class") classes
+            li
+              a(id="member-link", href="/member") Member
+        .support-link
+          h1.support-hed Support
+          ul
+            li
+              a(href='') About
+            li
+              a(href='') Blog
+            li
+              a(href='') classes
+            li
+              a(href='') Member
+        .tips-guide
+          h1.tips-hed Tips &amp; Guides
+          p.tips-para
+            | Physical fitness may help prevent depression, anxiety
+          .tips
+            p.tips-para
+              | Fitness: The best exercise to lose belly fat and tone up...
+      hr
+      .footer-copyright
+        p Copyright &copy; 2023 All rights reserved
+    script(src='/static/js/swiper-bundel.js')
+    script(src='/static/js/slider.js')
+    script(src='/static/js/resp.js')
+  // Swiper JS

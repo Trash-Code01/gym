@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.categories {
+  background: #151515;
+}
+
+.categories-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.categories-img {
+  width: 40%;
+}
+
+.categories-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.categories-hed {
+  color: whitesmoke;
+  font-size: x-large;
+}
+
+td {
+  padding: 8px 90px;
+  color: whitesmoke;
+}
+
+td:hover {
+  color: #f36100;
+}
+
+.categories-para {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin: 70px 120px;
+}
+
+.categories-para-II {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin: 70px 120px;
+}
+
+.categories-para p {
+  color: whitesmoke;
+}
+
+.categories-para-II p {
+  color: whitesmoke;
+}
+
+.categories-para-hed {
+  color: #f36100;
+}
+
+.categories-para-hed-II {
+  color: #f36100;
+}
+
+/*     */
+.trainer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.trainer-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.trainer-information {
+  width: 60%;
+}
+
+.trainer-content {
+  width: 90%;
+}
+
+.trainer-hed {
+  color: #f36100;
+  font-size: x-large;
+  padding: 10px 20px;
+}
+
+.trainer-span {
+  color: whitesmoke;
+  padding: 0 20px;
+}
+
+.trainer-para {
+  color: whitesmoke;
+  width: 80%;
+  padding: 12px 25px;
+}
+
+/*  */
+.time-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  overflow: auto;
+}
+
+.trainer-td {
+  padding: 12px 40px;
+  border: 2px solid black;
+  width: 130px;
+}
+
+.dark {
+  background-color: black;
+}
+
+th {
+  color: #f36100;
+  width: 30px;
+  border: 2px solid black;
+  height: 65px;
+}
+/*  */
+
+@media screen and (max-width: 800px) {
+  .CLASSES-DETAIL{
+    font-size: xx-large;
+  }
+  .categories-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .categories-img {
+    width: 70%;
+    height: 100%;
+  }
+  .categories-para {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    margin: 30px auto;
+  }
+  .categories-para-II{
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    margin: 30px auto;
+  }
+  .trainer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trainer-content {
+    width: 100%;
+  }
+  .trainer-para {
+    color: whitesmoke;
+    width: 100%;
+    padding: 20px;
+  }
+  td {
+    padding: 8px 50px;
+    color: whitesmoke;
+  }
+ 
+  .trainer-information {
+    width: 98%;
+  }
+}

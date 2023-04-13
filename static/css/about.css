@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-banner {
+  height: 400px;
+  width: 100%;
+}
+
+.about-banner-img {
+  background-image: url(/static/img/about.img/breadcrumb-bg.jpg);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-hed {
+  color: whitesmoke;
+  margin-top: 115px;
+  font-size: xx-large;
+}
+
+/*  */
+.about-video-container {
+  display: flex;
+}
+
+.video-content {
+  width: 50%;
+  height: 50%;
+}
+
+.video-content video {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutus-what-we-done {
+  width: 50%;
+}
+
+.what-we-done {
+  color: whitesmoke;
+  font-size: larger;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.we-done {
+  color: whitesmoke;
+  padding: 80px 75px;
+}
+
+.skill-bar {
+  margin: 3px 67px;
+}
+
+/* Container for skill bars */
+
+.container {
+  width: 100%;
+  background-color: black;
+  height: 16px;
+}
+
+.skills {
+  text-align: right;
+  /* Right-align text */
+  padding-top: 10px;
+  /* Add top padding */
+  padding-bottom: 10px;
+  /* Add bottom padding */
+  color: white;
+  /* White text color */
+}
+
+.bar {
+  padding: 15px 0;
+  color: whitesmoke;
+}
+
+.html {
+  width: 90%;
+  background-color: whitesmoke;
+}
+
+.css {
+  width: 97%;
+  background-color: whitesmoke;
+}
+
+.js {
+  width: 85%;
+  background-color: whitesmoke;
+}
+
+.php {
+  width: 70%;
+  background-color: whitesmoke;
+}
+
+/*  */
+.our-team-content {
+  background-color: #100e0e;
+  margin-top: 50px;
+}
+
+.TRAIN.WITH.EXPERTS-hed {
+  color: whitesmoke;
+  padding: 20px 0;
+}
+
+/*               */
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: black;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: black;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f36100;
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #f36100;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: black;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  /* border: 4px solid #4070F4; */
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f36100;
+}
+
+.description {
+  font-size: 14px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #265df2;
+}
+
+.swiper-navBtn {
+  color: #6e93f7;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #4070f4;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #6e93f7;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+/* responsive css */
+@media screen and (max-width: 996px) {
+  .about-banner-img {
+    background-image: url(/static/img/about.img/sule-makaroglu-r3C6ghRxDxc-unsplash.jpg);
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutus-what-we-done {
+    width: 70%;
+  }
+
+  .we-done {
+    color: whitesmoke;
+    padding: 70px 0;
+    width: 100%;
+  }
+
+  .skill-bar {
+    margin: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+/* ---------------------------------------    */
+.swiper-button-prev.swiper-navBtn {
+  color: whitesmoke;
+}
+
+.swiper-button-next.swiper-navBtn {
+  /* background-color: white; */
+  color: whitesmoke;
+}
+
+/*-------------------------------------------- */
+.testimonial-content {
+  position: relative;
+  height: 500px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*  */
+.warrper-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.warrper-img {
+  width: 200px;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.wapper-para {
+  width: 50%;
+  margin: auto;
+  color: whitesmoke;
+}
+
+.fa-star::before {
+  content: "\f005";
+  color: #d49d09;
+  font-size: 10px;
+}
+
+.name-testimonial {
+  color: #f36100;
+}
+
+.swiper-slide {
+  background: #151515;
+}
+
+.wapper-content {
+  background: #151515;
+}
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  content: "prev";
+  color: whitesmoke;
+}
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+  content: "next";
+  color: whitesmoke;
+}
+
+/*   ressponsive css */
+
+
+/* responsive for mobile  */
+@media screen and (max-width: 450px) {
+
+  /* for video */
+  .video-content {
+    width: 75%;
+  }
+
+  .TRAIN.WITH.EXPERTS-hed {
+    font-size: x-large;
+  }
+
+  .our-team-hed {
+    font-size: 1.5rem;
+  }
+
+  .wapper-para {
+    font-size: small;
+    margin: 13px auto;
+  }
+  .about-banner-img{
+    background-image: url(/static/img/about.img/mobile.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+}

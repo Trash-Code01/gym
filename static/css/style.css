@@ -1,0 +1,1230 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+body {
+  background: #151515;
+}
+/* -------------------------------- */
+/* 🙌 header styling  started* 🙌/
+/* ------------------------------- */
+
+/* ------------------ -----*/
+/* 😄 Navbar styling  😄*/
+/* ----------------------- */
+
+.navbar {
+  display: flex;
+  background-color: black;
+  height: 100px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.navlist {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navlist li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.navlist li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+}
+
+.navlist li a:hover {
+  color: rgb(205, 66, 16);
+}
+
+/* ---------------------- -------*/
+/* 😄 Navbar styling end 😄 */
+/* ---------------------- ------*/
+
+/* ----------------------------- */
+/* ❤️ Header section end ❤️*/
+/* ---------------------- -------*/
+
+
+/* ----------------------------- */
+/* 👀coursole slider styling 👀 */
+/* ------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper,
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  overflow: hidden;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.slide .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide .image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+
+.image-data span.text {
+  font-size: 60px;
+  font-weight: 400;
+  color: #f36100;
+  padding: 0 20px;
+}
+
+.image-data h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #333;
+  background: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+a.button:hover {
+  color: #fff;
+  background-color: #c87e4f;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.swiper-button-next {
+  right: 50px;
+}
+
+.swiper-button-prev {
+  left: 50px;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  visibility: hidden;
+}
+
+.swiper-pagination-bullet-active {
+  border: 2px solid #fff;
+  background-color: #c87e4f;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    visibility: hidden;
+  }
+
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
+}
+
+/* ------------------------------------- */
+/* 👀coursole slider styling end 👀 */
+/* ------------------------------ --------*/
+
+/* ----------------------------- ------------*/
+/* 🙃text animation styling started 🙃*/
+/* ---------------------------------------- */
+
+
+.hed-text {
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  display: flex;
+  padding: 1.5rem 25rem;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.container .text {
+  position: relative;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container .text.first-text {
+  color: #fff;
+}
+
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+
+/* ----------------------------- ------------*/
+/* 🙃text animation styling end 🙃*/
+/* ---------------------------------------- */
+
+
+/* ---------------------- --------------*/
+/* 😶 second section  styling started  😶*/
+/* ---------------------- --------------*/
+
+.second-sec {
+  background-color: black;
+  height: 600px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 50px;
+  color: #f36100;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+
+.cart {
+  display: flex;
+  margin: 50px 150px;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-img img {
+  width: 30%;
+  border-radius: 97%;
+  background-color: #f36100;
+}
+
+.card-img img:hover {
+  background-color: #f36100;
+  cursor: pointer;
+}
+
+.para-txt {
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ultility classes */
+.text-center {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
+/* ---------------------- --------------*/
+/* 😶 second section  styling end  😶*/
+/* ---------------------- --------------*/
+
+
+/* ---------------------------------------- */
+/* 🤪 class section  styling started 🤪 */
+/*--------------------------------------- */
+
+.gallery-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-hed {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+.class-sec-hed{
+  color: #ffffff;
+}
+
+.class-section span {
+  display: flex;
+  margin: 15px 30px;
+  color: whitesmoke;
+}
+
+.class-section h1 {
+  display: flex;
+  justify-content: center;
+  margin: 22px auto;
+}
+
+.card-gallery {
+  height: 100%;
+  width: 25vw;
+  border: 2px solid black;
+  margin: 0px 15px;
+  box-shadow: 10px 5px 5px #ddd;
+}
+
+.cardimg-sm img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.cardimg-sm {
+  width: 100%;
+ 
+}
+
+.gallery-txt {
+  margin: 5px 32px;
+  color: #f36100;
+}
+
+
+
+.big-gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.big-card {
+  border: 2px solid black;
+  width: 36vw;
+  margin: 0 15px;
+  box-shadow: 10px 5px 5px #ddd;
+}
+.bigcard-img {
+	
+	width: 100%;
+	height: 85%;
+}
+.bigcard-img img{
+  height: 100%;
+  width: 100%;
+}
+/* ----------------------------------- */
+/* banner section styling started */
+/* ----------------------------------- */
+
+.banner-img {
+  margin-top: 120px;
+  background-image: url(/static/img/gallery.img/banner-bg.jpg);
+  background-repeat: no-repeat;
+  height: 550px;
+  background-size: cover;
+}
+
+.banner-text {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  padding-top: 120px;
+}
+
+.bannersec-text {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: #f36100;
+  font-size: large;
+}
+
+.member-btn {
+  display: flex;
+  justify-content: center;
+  margin: 36px auto;
+}
+
+.become-member {
+  height: 37px;
+  width: 170px;
+  border: 2px solid #f36100;
+  background: none;
+  color: whitesmoke;
+}
+
+.become-member:hover {
+  background-color: #f36100;
+  cursor: pointer;
+}
+
+
+/* ----------------------------------- */
+/* banner section styling end */
+/* ----------------------------------- */
+
+/* ---------------------------------------- */
+/* 🤪 class section  styling end 🤪 */
+/*--------------------------------------- */
+
+/* ------------------------------- */
+/*👌 price-section  styling started 👌 */
+/* -------------------------------- */
+
+.price-sec-hed{
+    text-align: center;
+    color: #f36100;
+    padding-top: 20px;
+    font-size: x-large;
+
+}
+.price-sec-span{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: whitesmoke;
+}
+.plan {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.plan-main-card {
+  height: 640px;
+  border: 2px solid black;
+  width: 335px;
+  margin: 0 20px;
+  box-shadow: 10px 5px 5px #ddd;
+}
+
+.plan-main-card:hover {
+  background-color: #f36100;
+}
+
+.plan-inner-card {
+  text-align: center;
+}
+
+.plan-inner-card:hover {
+  background-color: #f36100;
+}
+
+ol {
+  padding-top: 15px;
+}
+
+.plan-hed {
+  padding-top: 25px;
+  color: whitesmoke;
+}
+
+.rate-of-plan {
+  font-size: xxx-large;
+  padding-top: 12px;
+  color: whitesmoke;
+}
+
+.class-plan {
+  font-size: larger;
+  color: white;
+}
+
+.plan-li {
+  list-style: none;
+  padding: 10px;
+  font-size: x-large;
+  color: white;
+}
+
+.enroll {
+  height: 40px;
+  width: 200px;
+}
+
+.enroll:hover {
+  background-color: #f36100;
+  cursor: pointer;
+}
+
+.enroll-btn {
+  padding-top: 35px;
+}
+
+
+/* ------------------------------- */
+/*👌 price-section  styling end 👌 */
+/* -------------------------------- */
+
+
+/* ----------------------------------------- ------*/
+/* 😴 photo-gallery section  styling started 😴*/
+/* ----------------------------------------------- */
+
+.photo-gallery {
+  display: flex;
+  margin-top: 50px;
+}
+
+.gallery-first-photo {
+  width: 60%;
+}
+
+.gallery-first-photo img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.gallery-second-photo img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.gallery-second-photo {
+  margin: 0 8px;
+}
+
+.gallery-third-photo img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+/* second gallery styling  */
+.photo-conatiner {
+  display: flex;
+  margin-top: 20px;
+}
+
+.gallery-first-photo-conatiner {
+  width: 50%;
+  border: 2px solid black;
+}
+
+.gallery-first-photo-conatiner img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-second-photo-conatiner {
+  border: 2px solid black;
+  width: 50%;
+  margin: 0 8px;
+}
+
+.gallery-second-photo-conatiner img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-third-photo-conatiner {
+  border: 2px solid black;
+  width: 50%;
+}
+
+.gallery-third-photo-conatiner img {
+  height: 100%;
+  aspect-ratio: 1.6;
+  width: auto;
+}
+/* ----------------------------------------- ------*/
+/* 😴 photo-gallery section  styling end 😴*/
+/* ----------------------------------------------- */
+
+
+/* ------------------ -----------------*/
+/* (●'◡'●) footer section * (●'◡'●)/ 
+/* ----------------------------------- */
+
+/* ------------------------------------------------------ */
+/*(●'◡'●) connnect-with-us  styling started (●'◡'●)*/
+/* ------------------------------------------------------- */
+
+.connnect-with-us {
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+	background-color: #0a0a0a;
+	height: 150px;
+	width: 100%;
+}
+
+.location-img {
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	background-color: #f36100;
+  margin: 35px 0;
+}
+.location-img img {
+	
+	height: 50%;
+	width: 50%;
+	margin: 18px 20px;
+	border-radius: 50%;
+}
+.location-span {
+	margin: 60px 18px;
+	color: whitesmoke;
+}
+
+.android-img{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	background-color: #f36100;
+  margin: 35px 0;
+}
+.android-img img {
+	height: 50%;
+	width: 50%;
+	margin: 18px 20px;
+	border-radius: 50%;
+}
+.android-span {
+	margin: 60px 18px;
+	color: whitesmoke;
+}
+
+
+.mail-img {
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	background-color: #f36100;
+  margin: 35px 0;
+}
+.mail-img img {
+	height: 50%;
+	width: 50%;
+	margin: 18px 20px;
+	border-radius: 50%;
+}
+.mail-span{
+  margin: 60px 18px;
+  color: whitesmoke;
+}
+
+/* ------------------------------------------------------ */
+/*(●'◡'●) connnect-with-us  styling end (●'◡'●)*/
+/* ------------------------------------------------------- */
+
+/* ------------------------------------------------------ */
+/*( •̀ ω •́ )✧ footer-container styling started ( •̀ ω •́ )✧*/
+/* ------------------------------------------------------- */
+
+.footer-container {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+  border: 2px solid black;
+  height: 300px;
+  width: 100%;
+}
+.footer-logo {
+	padding: 30px 2px;
+}
+.logo-text {
+	width: 30%;
+}
+.logo-para{
+  color: whitesmoke;
+}
+.usful-hed {
+	color: whitesmoke;
+	padding: 26px 0;
+}
+.support-hed{
+color: whitesmoke;
+padding: 26px 0;
+}
+.tips-hed{
+  color: whitesmoke;
+  padding: 26px 0;
+}
+.useful-link ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.useful-link ul li {
+	list-style: none;
+	padding: 5px 30px;
+}
+.support-link {
+	margin: 0 27px;
+}
+.support-link ul li a{
+  text-decoration: none;
+  color: #f36100;
+  cursor: pointer;
+}
+.support-link ul li{
+  padding: 5px 30px;
+  list-style: none;
+}
+.tips-para {
+	color: #ffffff;
+	padding: 10px 0px;
+	text-decoration: underline;
+}
+.tips-guide {
+	margin-left: 20px;
+}
+.footer-copyright{
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: #f36100;
+  border: 2px solid black;
+  align-items: center;
+}
+.fa-facebook::before {
+	content: "\f09a";
+	color: #f36100;
+}
+.fa-instagram::before {
+	content: "\f16d";
+  color: #f36100;
+}
+.fa-envelope::before {
+	content: "\f0e0";
+	color: #f36100;
+}
+.fa-twitter::before {
+	content: "\f099";
+  color: #f36100;
+}
+.fa-youtube::before {
+	content: "\f167";
+  color: #f36100;
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px}
+
+  .line {
+    width: 33px;
+    background-color: whitesmoke;
+    height: 4px;
+    margin: 5px 3px;
+}
+span.favicon {
+  padding: 0 4px;
+}
+/* ------------------------------------------------------ */
+/*( •̀ ω •́ )✧ footer-container styling End  ( •̀ ω •́ )✧*/
+/* ------------------------------------------------------- */
+
+/* ---------------------------------- */
+@media screen and (max-width: 1178px) {
+  .cart {
+    display: flex;
+    margin: 50px 10px;
+    justify-content: center;
+    text-align: center;
+    object-fit: contain;
+  }
+  .navlist li {
+    list-style: none;
+    padding: 0 10px;
+  }
+  .footer-container{
+    height: 100%;
+  }
+}
+@media screen and (max-width: 996px) {
+  /* for slider hight */
+
+  .main {
+    height: 30vh;
+    width: 100%;
+  }
+  /* for text animation size */
+  .image-data span.text {
+    font-size: 40px;
+    font-weight: 400;
+    color: #f36100;
+    padding: 0 20px;
+  }
+  .hed-text {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-size: larger;
+    display: flex;
+    padding: 1.5rem 0rem;
+    justify-content: center;
+  }
+/*  */
+  .navlist {
+    display: flex;
+    flex-direction: column;
+  }
+  .navlist li {
+    list-style: none;
+    padding: 11px 10px;
+  }
+  .navbar{
+    height: 447px;
+    flex-direction: column;
+    transition: all 0.5s ease-out;
+
+}
+  .h-nav{
+    height: 73px;
+  }
+  
+  .second-sec{
+    width: 100%;
+    height: 100%;
+  }
+  .cart{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-img img {
+    width: 130px;
+    border-radius: 97%;
+    background-color: #f36100;
+  }
+  .para-txt {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    padding: 12px 36px;
+  }
+  .card-1st {
+    margin: 15px 0;
+  }
+  .card-2nd {
+    margin: 15px 0;
+  }
+  .card-3rd {
+    margin: 15px 0;
+  }
+  .card-4th {
+    margin: 15px 0;
+  }
+  /*    */
+  .banner-img {
+    margin-top: 120px;
+    background-image: url(/static/img/gallery.img/banner-bg.jpg);
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    /* object-position: ; */
+    object-fit: contain;
+  }
+  .banner-text {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    padding-top: 30px;
+  }
+  .member-btn {
+    display: flex;
+    justify-content: center;
+    margin: 4px auto;
+  }
+  .gallery-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card-gallery {
+    height: 100%;
+    width: 60%;
+    border: 2px solid black;
+    margin: 15px auto;
+  }
+  .big-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-gallery{
+    box-shadow: none;
+  }
+  .big-card {
+    box-shadow: none;
+  }
+  .big-card {
+    border: 2px solid black;
+    width: 60%;
+    margin: 15px 15px;
+  }
+  .plan {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .plan-main-card {
+    height: 640px;
+    border: 2px solid black;
+    width: 335px;
+    margin: 15px 20px;
+  }
+  .photo-gallery {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery-first-photo {
+    width: 100%;
+  }
+  .gallery-second-photo {
+    margin: 30px 0px;
+  }
+  .photo-conatiner {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery-second-photo-conatiner {
+    border: 2px solid black;
+    width: 50%;
+    margin: 15px 0px;
+  }
+  .gallery-third-photo-conatiner {
+    border: 2px solid black;
+    width: 100%;
+  }
+  .gallery-third-photo-conatiner img {
+    height: 100%;
+    width: 100%;
+  }
+  /*  */
+  .location-span {
+    margin: 60px 3px;
+    color: whitesmoke;
+  }
+  .footer-logo img{
+    width: 135px;
+  }
+  .location-span {
+    margin: 60px 3px;
+    color: whitesmoke;
+    font-size: small;
+  }
+  .android-span {
+    margin: 60px 18px;
+    color: whitesmoke;
+    font-size: small;
+  }
+  .mail-span {
+    margin: 60px 18px;
+    color: whitesmoke;
+    font-size: small;
+  }
+  .usful-hed {
+    color: whitesmoke;
+    padding: 35px 0;
+    font-size: larger;
+  }
+  .support-hed {
+    color: whitesmoke;
+    padding: 35px 0;
+    font-size: larger;
+  }
+  .tips-hed {
+    color: whitesmoke;
+    padding: 35px 0;
+    font-size: larger;
+  }
+  .logo-para {
+    color: whitesmoke;
+    font-size: small;
+  }
+  .tips-para {
+    color: #ffffff;
+    padding: 10px 0px;
+    text-decoration: underline;
+    font-size: small;
+  }
+  .support-link ul li a {
+    text-decoration: none;
+    color: #f36100;
+    cursor: pointer;
+    font-size: small;
+  }
+  .useful-link ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: small;
+  }
+  .favicon{
+    padding: 0 7px;
+  }
+  /*  */
+  .v-class {
+    opacity: 0;
+}
+.burger {
+  display: block;
+}
+}
+@media screen and (max-width: 569px) {
+  /*  */
+  .main {
+    height: 50vh;
+    width: 100%;
+  }
+  .image-data span.text {
+    font-size: 25px;
+    font-weight: 400;
+    color: #f36100;
+    padding: 0 10px;
+  }
+  .big-card {
+    border: 2px solid black;
+    width: 70%;
+    margin: 15px auto;
+  }
+  .card-gallery {
+    height: 100%;
+    width: 75%;
+    border: 2px solid black;
+    margin: 15px auto;
+  }
+  .para-txt {
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    padding: 12px 20px;
+  }
+  /*  */
+  .gallery-first-photo-conatiner {
+    width: 75%;
+    border: 2px solid black;
+    height: 100%;
+  }
+  .gallery-second-photo-conatiner {
+    border: 2px solid black;
+    width: 75%;
+    margin: 15px 0px;
+    height: 100%;
+  }
+  /* banner section  */
+  .banner-img {
+    margin-top: 120px;
+    background-image: url(/static/img/gallery.img/banner-bg.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    /* object-position: ; */
+    object-fit: contain;
+  }
+  .banner-text {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    padding-top: 30px;
+  }
+  .bannersec-text {
+    display: flex;
+    justify-content: center;
+    padding: 30px 3px;
+    color: #f36100;
+    font-size: 16px;
+  }
+  .member-btn {
+    display: none;
+  }
+  /* price section */
+  .price-sec-span{
+    font-size: x-large;
+  }
+  .plan-main-card{
+    box-shadow: none;
+  }
+  .plan-main-card {
+    height: 600px;
+    border: 2px solid black;
+    width: 70%;
+    margin: 15px 0px;
+  }
+  .enroll {
+    height: 40px;
+    width: 80%;
+  }
+  .plan-li {
+    list-style: none;
+    padding: 10px;
+    font-size: large;
+    color: white;
+  }
+  /*  */
+  .connnect-with-us {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: #0a0a0a;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  .location-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #f36100;
+    margin: 35px 20px;
+  }
+  .location-span {
+    margin: 0px 20px;
+    color: whitesmoke;
+    font-size: 15px;
+  }
+  .android-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #f36100;
+    margin: 35px 20px;
+  }
+  .android-span {
+    margin: 3px 20px;
+    color: whitesmoke;
+    font-size: 15px;
+  }
+  .mail-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #f36100;
+    margin: 35px 20px;
+  }
+  .mail-span {
+    margin: 3px 20px;
+    color: whitesmoke;
+    font-size: small;
+  }
+  /*  */
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .logo-para {
+    color: whitesmoke;
+    font-size: small;
+    width: 100vw;
+  }
+  .usful-hed {
+    color: whitesmoke;
+    padding: 35px 20px;
+    font-size: larger;
+  }
+  .useful-link ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: small;
+    padding: 0 15px;
+  }
+  .support-hed {
+    color: whitesmoke;
+    padding: 35px 10px;
+    font-size: larger;
+  }
+}

@@ -1,0 +1,195 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Fitneshub is a gym and fitness center located in [City, Country]. We offer a wide range of equipment, classes, and personal training options for all fitness levels. Join us today and start your fitness journey!')
+    meta(name='keywords', content='gym, fitness center, personal training, [City], [Country]')
+    meta(name='author', content='laraib')
+    title FitnessHub | Gym &amp; Fitness Center in [City, Country]
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==', crossorigin='anonymous', referrerpolicy='no-referrer')
+    link(rel='stylesheet', href='/static/css/style.css')
+    link(rel='stylesheet', href='/static/css/about.css')
+    link(rel='stylesheet', href='/static/css/our-team.css')
+  body
+    header.header-section
+      nav.navbar.h-nav
+        .logo
+          a(href='/index')
+            img(src='/static/img/slider.img/logo.png', alt='')
+        ul.navlist.v-class
+          li
+            a(href='index') Home
+          li
+            a(href='about')  About us
+          li
+            a(href='class')  Classes
+          li
+            a(href='services')  Services
+          li
+            a(id="our-team-link", href="/our-team")  our team
+          li
+            a(href='member') Become member 
+          li
+            a(href='sign-up') login 
+        .burger
+          .line
+          .line
+          .line
+    section.about-banner
+      .about-banner-img
+        span.about-hed
+          h1 OUR TEAM
+    section.our-team
+      h1.first-hed OUR TEAM
+      h3.second-hed TRAIN WITH EXPERTS
+      .our-team-container
+        .team-content
+          .our-team-card
+            .team-member
+              .team-member-image
+                img(src='/static/img/our-team.img/team-1.jpg', alt='Person 1')
+                .team-member-hover
+                  h3 Athart Rachel
+                  .social-media-icons
+                    a(href='#')
+                      i.fab.fa-facebook-f
+                    a(href='#')
+                      i.fab.fa-twitter
+                    a(href='#')
+                      i.fab.fa-instagram
+          .our-team-card
+            .team-member
+              .team-member-image
+                img(src='/static/img/our-team.img/team-2.jpg', alt='Person 1')
+                .team-member-hover
+                  h3 John Doe
+                  .social-media-icons
+                    a(href='#')
+                      i.fab.fa-facebook-f
+                    a(href='#')
+                      i.fab.fa-twitter
+                    a(href='#')
+                      i.fab.fa-instagram
+          .our-team-card
+            .team-member
+              .team-member-image
+                img(src='/static/img/our-team.img/team-3.jpg', alt='Person 1')
+                .team-member-hover
+                  h3 John Doe
+                  .social-media-icons
+                    a(href='#')
+                      i.fab.fa-facebook-f
+                    a(href='#')
+                      i.fab.fa-twitter
+                    a(href='#')
+                      i.fab.fa-instagram
+      .our-team-container
+        .team-content
+          .our-team-card
+            .team-member
+              .team-member-image
+                img(src='/static/img/our-team.img/team-6.jpg', alt='Person 1')
+                .team-member-hover
+                  h3 John Doe
+                  .social-media-icons
+                    a(href='#')
+                      i.fab.fa-facebook-f
+                    a(href='#')
+                      i.fab.fa-twitter
+                    a(href='#')
+                      i.fab.fa-instagram
+          .our-team-card
+            .team-member
+              .team-member-image
+                img(src='/static/img/our-team.img/team-4.jpg', alt='Person 1')
+                .team-member-hover
+                  h3 John Doe
+                  .social-media-icons
+                    a(href='#')
+                      i.fab.fa-facebook-f
+                    a(href='#')
+                      i.fab.fa-twitter
+                    a(href='#')
+                      i.fab.fa-instagram
+          .our-team-card
+            .team-member
+              .team-member-image
+                img(src='/static/img/our-team.img/team-5.jpg', alt='Person 1')
+                .team-member-hover
+                  h3 John Doe
+                  .social-media-icons
+                    a(href='#')
+                      i.fab.fa-facebook-f
+                    a(href='#')
+                      i.fab.fa-twitter
+                    a(href='#')
+                      i.fab.fa-instagram
+    footer.footer-section
+      .connnect-with-us
+        .location-img
+          img(src='/static/img/png.img/icons8-region-100.png', alt='')
+        span.location-span  333 Middle Winchendon Rd, Rindge
+        .android-img
+          img(src='/static/img/png.img/icons8-smartphone-96.png', alt='')
+        span.android-span  125-711-811
+        span.android-span  125-711-811
+        .mail-img
+          img(src='/static/img/png.img/icons8-gmail-logo-96.png', alt='')
+        span.mail-span support gym@gmail.com
+      .footer-container
+        .logo-text
+          .footer-logo
+            img(src='/static/img/slider.img/logo.png', alt='')
+          p.logo-para
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+            | ut aliquid consectetur quae, ipsum, cumque doloremque mollitia
+            | veritatis vero ducimus, natus placeat officiis rem. Reprehenderit
+            | eveniet laborum adipisci optio nobis.
+          span
+            a(href='')
+              i.fa-brands.fa-facebook
+          span
+            a(href='')
+              i.fa-brands.fa-instagram
+          span
+            a(href='')
+              i.fa-brands.fa-twitter
+          span
+            a(href='')
+              i.fa-brands.fa-youtube
+          span
+            a(href='')
+              i.fa.fa-envelope(aria-hidden='true')
+        .useful-link
+          h1.usful-hed Useful links
+          ul
+            li
+              a(id="about-link", href="/about") About
+            li
+              a(href='') Blog
+            li
+              a(id="class-link", href="/class") classes
+            li
+              a(id="member-link", href="/member") Member
+        .support-link
+          h1.support-hed Support
+          ul
+            li
+              a(href='') About
+            li
+              a(href='') Blog
+            li
+              a(href='') classes
+            li
+              a(href='') Member
+        .tips-guide
+          h1.tips-hed Tips &amp; Guides
+          p.tips-para Physical fitness may help prevent depression, anxiety
+          .tips
+            p.tips-para Fitness: The best exercise to lose belly fat and tone up...
+      hr
+      .footer-copyright
+        p
+          | Copyright &copy; 2023 All rights reserved
+          script(src='/static/js/resp.js')

@@ -1,0 +1,66 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title  Fitneshub.com
+    link(href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='/static/css/sign-up.css')
+ 
+    section.container.forms
+      .form.login
+        .form-content
+          header Login
+          form(action='/logincheck', method='post')
+            .field.input-field
+              input.input(type='email', placeholder='Email', name='email')
+            .field.input-field
+              input.password(type='password', placeholder='Password', name='password')
+              |  
+              i.bx.bx-hide.eye-icon
+            .form-link
+              a.forgot-pass(href='#') Forgot password?
+            .field.button-field
+              button(type='submit') Login
+          .form-link
+            span
+              | Don&apos;t have an account? 
+              a.link.signup-link(href='#') Signup
+        .line
+        .media-options
+          a.field.facebook(href='#')
+            i.bx.bxl-facebook.facebook-icon
+            span Login with Facebook
+        .media-options
+          a.field.google(href='#')
+            img.google-img(src='/static/img/png.img/google.png', alt='')
+            span Login with Google
+      // Signup Form
+      .form.signup
+        .form-content
+          header Signup
+          form(action='/login' method='post')
+            .field.input-field
+              input.input(type='email', placeholder='Email',name='email')
+            .field.input-field
+              input.password(type='password', placeholder='Create password', name='password')
+            .field.input-field
+              input.password(type='password', placeholder='Confirm password',name='confirmpassword')
+              i.bx.bx-hide.eye-icon
+            .field.button-field
+              button(type='submit') Signup
+          .form-link
+            span
+              | Already have an account? 
+              a.link.login-link(href='#') Login
+        .line
+        .media-options
+          a.field.facebook(href='#')
+            i.bx.bxl-facebook.facebook-icon
+            span Login with Facebook
+        .media-options
+          a.field.google(href='#')
+            img.google-img(src='/static/img/png.img/google.png', alt='')
+            span Login with Google
+            script(src="/static/js/sign-up.js") 

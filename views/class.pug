@@ -1,0 +1,233 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title  Fitneshub.com
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==', crossorigin='anonymous', referrerpolicy='no-referrer')
+    link(rel='stylesheet', href='/static/css/about.css')
+    link(rel='stylesheet', href='/static/css/style.css')
+    link(rel='stylesheet', href='/static/css/class.css')
+  body
+    header.header-section
+      nav.navbar.h-nav
+        .logo
+          a(href='/index')
+            img(src='/static/img/slider.img/logo.png', alt='')
+        ul.navlist.v-class
+          li
+            a(href='index') Home
+          li
+            a(href='about')  About us
+          li
+            a(id="class-link", href="/class")  Classes 
+          li
+            a(href='services')  Services
+          li
+            a(href='our-team')  our team
+          li
+            a(href='member') Become member 
+          li
+            a(href='sign-up') login 
+        .burger
+          .line
+          .line
+          .line
+    section.about-banner
+      .about-banner-img
+        span.about-hed
+          h1.CLASSES-DETAIL CLASSES DETAIL
+    section.categories
+      .categories-content
+        .categories-img
+          img(src='/static/img/CATEGORIES.img/class-detailsl.jpg', alt='')
+        .catagoies-box
+          h2.categories-hed CATEGORIES
+          table
+            tbody
+              tr
+                td Runing
+                td  12
+              tr
+                td yoga
+                td  22
+              tr
+                td Weightloss
+                td 30
+              tr
+                td Cario
+                td 15
+              tr
+                td Body buiding
+                td 34
+              tr
+                td Nutrition
+                td 23
+      .categories-para
+        h3.categories-para-hed BODY BUIDING
+        p
+          | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit consectetur deserunt earum minima inventore
+          | quis distinctio ipsum similique accusamus ipsa doloribus veniam expedita, provident ab! Ullam vitae hic libero
+          | debitis!Wlorem10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nobis!
+      .categories-para-II
+        h3.categories-para-hed-II BODY BUIDING
+        p
+          | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit consectetur deserunt earum minima inventore
+          | quis distinctio ipsum similique accusamus ipsa doloribus veniam expedita, provident ab! Ullam vitae hic libero
+          | debitis!Wlorem10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nobis!
+    section.trainer
+      .trainer-container
+        .trainer-img
+          img(src='/static/img/CATEGORIES.img/trainer-profile.jpg', alt='')
+        .trainer-information
+          h4.trainer-hed Athart Rachel
+          span.trainer-span GYM TRAINER
+          .trainer-content
+            p.trainer-para
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus libero minima rem
+              | itaque ad eum accusantium commodi quo molestias ullam harum facere deserunt maxime aperiam repudiandae
+              | nostrum non, officiis a!W Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, reiciendis!
+          table
+            tbody
+              tr
+                td Age
+                td 30
+              tr
+                td Weight
+                td 149lbs
+              tr
+                td height
+                td 10&apos;2
+              tr
+                td Occupation
+                td No-founder
+          p.trainer-para
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, aspernatur eaque!
+            | Doloribus reprehenderit ex odio, mollitia distinctio quisquam, dicta, molestias ipsum animi ipsa laborum
+            | officiis quos numquam ad similique accusa
+      .time-table
+        table
+          thead
+            tr
+              th Timing
+              th Monday
+              th Tuesday
+              th Wednesday 
+              th Thursday
+              th Friday
+              th Saturday
+              th Sunday
+          tbody
+            tr
+              td.dark.trainer-td 6.00am - 8.00am
+              td.dark.trainer-td WEIGHT LOOSE
+              td.trainer-td CARDIO
+              td.dark.trainer-td YOGA
+              td.trainer-td fitnes
+              td.dark.trainer-td
+                | BOXING
+                | Rachel Adam
+              td.trainer-td BODY BUILDING
+              td.dark.trainer-td cycling
+            tr
+              td.dark.trainer-td 10.00am - 12.00am 
+              td.trainer-td CARDIO
+              td.dark.trainer-td WEIGHT LOOSE
+              td.trainer-td fitnes
+              td.dark.trainer-td YOGA
+              td.trainer-td
+                | BOXING
+                | Rachel Adam
+              td.dark.trainer-td cycling
+              td.trainer-td BODY BUILDING
+            tr
+              td.dark.trainer-td 5.00pm - 7.00pm
+              td.dark.trainer-td WEIGHT LOOSE
+              td.trainer-td CARDIO
+              td.dark.trainer-td fitnes
+              td.trainer-td cycling
+              td.dark.trainer-td YOGA
+              td.trainer-td
+                | BOXING
+                | Rachel Adam
+              td.dark.trainer-td BODY BUILDING
+            tr
+              td.dark.trainer-td 5.00pm - 7.00pm
+              td.trainer-td WEIGHT LOOSE
+              td.dark.trainer-td CARDIO
+              td.trainer-td fitnes
+              td.dark.trainer-td
+                | BOXING
+                | Rachel Adam
+              td.trainer-td BODY BUILDING
+              td.dark.trainer-td cycling
+              td.trainer-td YOGA
+    footer.footer-section
+      .connnect-with-us
+        .location-img
+          img(src='/static/img/png.img/icons8-region-100.png', alt='')
+        span.location-span  333 Middle Winchendon Rd, Rindge
+        .android-img
+          img(src='/static/img/png.img/icons8-smartphone-96.png', alt='')
+        span.android-span  125-711-811
+        span.android-span  125-711-811
+        .mail-img
+          img(src='/static/img/png.img/icons8-gmail-logo-96.png', alt='')
+        span.mail-span support gym@gmail.com
+      .footer-container
+        .logo-text
+          .footer-logo
+            img(src='/static/img/slider.img/logo.png', alt='')
+          p.logo-para
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+            | ut aliquid consectetur quae, ipsum, cumque doloremque mollitia
+            | veritatis vero ducimus, natus placeat officiis rem. Reprehenderit
+            | eveniet laborum adipisci optio nobis.
+          span
+            a(href='')
+              i.fa-brands.fa-facebook
+          span
+            a(href='')
+              i.fa-brands.fa-instagram
+          span
+            a(href='')
+              i.fa-brands.fa-twitter
+          span
+            a(href='')
+              i.fa-brands.fa-youtube
+          span
+            a(href='')
+              i.fa.fa-envelope(aria-hidden='true')
+        .useful-link
+          h1.usful-hed Useful links
+          ul
+            li
+              a(id="about-link", href="/about") About
+            li
+              a(href='') Blog
+            li
+              a(id="class-link", href="/class") classes
+            li
+              a(id="member-link", href="/member") Member
+        .support-link
+          h1.support-hed Support
+          ul
+            li
+              a(href='') About
+            li
+              a(href='') Blog
+            li
+              a(href='') classes
+            li
+              a(href='') Member
+        .tips-guide
+          h1.tips-hed Tips &amp; Guides
+          p.tips-para Physical fitness may help prevent depression, anxiety
+          .tips
+            p.tips-para Fitness: The best exercise to lose belly fat and tone up...
+      hr
+      .footer-copyright
+        p
+          | Copyright &copy; 2023 All rights reserved
+          script(src='/static/js/resp.js')
