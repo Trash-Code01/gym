@@ -95,7 +95,7 @@ app.post("/login", async (req, res) => {
       res.status(400).render("invalid-login.pug");
     }
   } catch (error) {
-    res.send(error);
+    res.send("invalid-login.pug");
   }
 });
 
@@ -109,11 +109,11 @@ app.post("/logincheck", async (req, res) => {
     if (useremail.password === password) {
       res.status(201).render("index.pug");
     } else {
-       res.render("404-user.pug");  
+       res.render("404-user");  
     }
   } catch (error) {
     
-    res.send(error);
+    res.render("404-user.pug");
   }
 });
 

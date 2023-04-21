@@ -30,6 +30,10 @@ body {
 .logo {
   display: flex;
 }
+.logo:hover {
+  transform: translateY(-2px) scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
 
 .logo img {
   padding-top: 20px;
@@ -55,8 +59,18 @@ body {
   font-size: larger;
 }
 
-.navlist li a:hover {
+/* .navlist li a:hover {
   color: rgb(205, 66, 16);
+  transform: translateY(-2px) scale(1.05);
+  transition: transform 0.2s ease-in-out;
+} */
+.navlist li a:hover {
+  position: relative;
+  top: -2px;
+  transition: top 0.2s ease-in-out;
+  color: #f36100;
+  font-weight: bolder;
+  border-bottom: 2px solid #f36100;
 }
 
 /* ---------------------- -------*/
@@ -477,6 +491,9 @@ h2 {
 
 .plan-main-card:hover {
   background-color: #f36100;
+  transform: translateY(-2px) scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .plan-inner-card {
