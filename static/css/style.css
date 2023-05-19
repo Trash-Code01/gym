@@ -59,11 +59,7 @@ body {
   font-size: larger;
 }
 
-/* .navlist li a:hover {
-  color: rgb(205, 66, 16);
-  transform: translateY(-2px) scale(1.05);
-  transition: transform 0.2s ease-in-out;
-} */
+
 .navlist li a:hover {
   position: relative;
   top: -2px;

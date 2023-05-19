@@ -67,8 +67,7 @@ app.post("/form", async (req, res) => {
     });
     const postdata = await userdata.save();
     //  res.send(postdata);
-    const params = { message: "form has been submitted successfully" };
-    res.status(200).render("member-msg.pug", params);
+    res.status(200).render("member-msg.pug");
     
   } catch (error) {
     res.send(error);
