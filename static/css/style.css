@@ -409,6 +409,11 @@ h2 {
   height: 550px;
   background-size: cover;
 }
+/* Your stylesheet */
+.element {
+  left: auto !important;
+  position: static !important;
+}
 
 .banner-text {
   color: whitesmoke;
