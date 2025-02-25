@@ -22,13 +22,13 @@ const text3 = document.querySelector(".sec-text3");
 const textLoad = () => {
   setTimeout(() => {
     text.textContent = " Train hard ";
-  }, 0);
+  }, 3000);
   setTimeout(() => {
     text.textContent = "Don't give up";
-  }, 4000);
+  }, 3000);
   setTimeout(() => {
     text.textContent = "You can do this";
-  }, 8000); //1s = 1000 milliseconds
+  }, 2000); //1s = 1000 milliseconds
 };
 
 textLoad();
